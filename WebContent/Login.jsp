@@ -1,5 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<%
+response.setHeader("Cache-Control","no-store");
+response.setHeader("Pragma","no-cache");
+response.setHeader ("Expires", "0");
+%> 
+
 <%@page import="Dao.Constantes"%>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -28,19 +34,20 @@
         <form action="control?action=login" method="post">
             <h1>LOGIN: <span class="badge badge-secondary">RESTAURANT JUANITO</span></h1>
             <table class="table table-striped">
-
+            
+            <tr>
             <%
                 if (!Constantes.MENSAJE.equals("") && Constantes.MENSAJE != null) {
                         out.write("<tr><td> " + Constantes.MENSAJE + " </td></tr>");
                     Constantes.MENSAJE = "";
 		}
             %>
-            
-            <tr>
-		<td>USUARIO : <input type="text" name="userName" id="Usuario" /></td>
+            </tr>
+  <tr>
+		<td>USUARIO : <input type="text" name="userName" id="userName" /></td>
             </tr>
             <tr>
-		<td>CONTRASEÑA : <input type="password" name="pass" id="Contraseña" /></td>
+		<td>CONTRASEÑA : <input type="password" name="pass" id="pass" /></td>
             </tr>
             <tr>
                 <td>

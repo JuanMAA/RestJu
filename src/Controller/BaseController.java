@@ -36,8 +36,8 @@ public class BaseController extends HttpServlet {
 			action = action.toLowerCase();
 			if (action.equals("login")) {
 				Login login = new Login();
-				login.setUsuario(request.getParameter("Usuario"));
-				login.setContrasena(request.getParameter("Contraseña"));
+				login.setUsuario(request.getParameter("userName"));
+				login.setContrasena(request.getParameter("pass"));
 
 				if (userServices.checkLogin(login)) {					
 					HttpSession session = request.getSession();
