@@ -23,7 +23,7 @@ response.setHeader ("Expires", "0");
                 <a class="nav-link active" href="Login.jsp">Ingresar/Loguear</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="HomePage.jsp">Inicio</a>
+                <a class="nav-link" href="HomePage.html">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
@@ -44,10 +44,10 @@ response.setHeader ("Expires", "0");
             %>
             </tr>
   <tr>
-		<td>USUARIO : <input type="text" name="userName" id="userName" /></td>
+		<td>USUARIO : <input type="text" name="userName" id="useName" /></td>
             </tr>
             <tr>
-		<td>CONTRASEÑA : <input type="password" name="pass" id="pass" /></td>
+		<td>CONTRASEÑA : <input type="password" name="pass" id="pas" /></td>
             </tr>
             <tr>
                 <td>
