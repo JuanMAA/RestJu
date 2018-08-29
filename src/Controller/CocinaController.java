@@ -68,7 +68,7 @@ public class CocinaController extends BaseController {
 				{
 					Constantes.MENSAJE = Constantes.ERROR_ACTUALIZACION;
 				}
-				Constantes.JSP_PAGE = contextPath+"OrdenProducto.jsp";
+				Constantes.JSP_PAGE = contextPath+"Orden.jsp";
 				response.sendRedirect(Constantes.JSP_PAGE);
 			}
 			else if(action.equals("updateItemtatus"))

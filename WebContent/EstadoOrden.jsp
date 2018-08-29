@@ -88,7 +88,7 @@
                 <td><%=om.getNumeroMesa() %></td>
 		<td><a href="ViewOrderedItemsList.jsp?orderId=<%=om.getIdOrden() %>"><%=om.getaNombreDe() %></a></td>
 		<td><%=om.getEstorden().name() %></td>
-                    <% if(om.getEstorden().name().equals(Orden.EstadoOrden.DELIVERED.name())) 
+                    <% if(om.getEstorden().name().equals(Orden.EstadoOrden.PEDIDO_ENTREGADO.name())) 
                         {isLastOrderDeliverd = Boolean.TRUE;} else {isLastOrderDeliverd = Boolean.FALSE;}
                     %>
             </tr>

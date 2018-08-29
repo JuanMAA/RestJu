@@ -45,7 +45,7 @@
 		<tr>
                     <td><%=i+1 %> <input type="hidden" name="orderId" value="<%= o.getIdOrden()%>" /></td>
                     <td><%=o.getNumeroMesa() %></td>
-                    <td><a href="ListaProducto.jsp?orderId=<%=o.getIdOrden() %>"><%=o.getaNombreDe() %></a></td>
+                    <td><a href="ListaProductos.jsp?orderId=<%=o.getIdOrden() %>"><%=o.getaNombreDe() %></a></td>
                     <td><%=o.getEstorden().name() %></td>
                     <td><select name="status"><% for(EstadoOrden os : EstadoOrden.values()){ %>
                         <option><%=os.name() %></option><%}%></select></td>

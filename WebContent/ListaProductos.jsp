@@ -63,6 +63,6 @@
                     </tr>
 		<%} %>
             </table>
-        <a href="OrderStatus.jsp">VOLVER ATRAS</a>
+        <a href="Orden.jsp">VOLVER ATRAS</a>
     </body>
 </html>

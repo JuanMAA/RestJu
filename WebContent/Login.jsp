@@ -35,19 +35,18 @@ response.setHeader ("Expires", "0");
             <h1>LOGIN: <span class="badge badge-secondary">RESTAURANT JUANITO</span></h1>
             <table class="table table-striped">
             
-            <tr>
+
             <%
                 if (!Constantes.MENSAJE.equals("") && Constantes.MENSAJE != null) {
                         out.write("<tr><td> " + Constantes.MENSAJE + " </td></tr>");
                     Constantes.MENSAJE = "";
 		}
             %>
-            </tr>
-  <tr>
-		<td>USUARIO : <input type="text" name="userName" id="useName" /></td>
+             <tr>
+		<td>USUARIO : <input type="text" name="nombreUsuario" id="nombreUsuario" /></td>
             </tr>
             <tr>
-		<td>CONTRASEÑA : <input type="password" name="pass" id="pas" /></td>
+		<td>CONTRASEÑA : <input type="password" name="contra" id="contra" /></td>
             </tr>
             <tr>
                 <td>
